@@ -31,7 +31,7 @@ jobs:
           key: ${{ secrets.PASSWORD }}
           port: 22
           script: {
-            sudo apt-get -y install httpd
+            sudo apt-get -y install httpd git
             cd /var/www/html
             git pull origin master
             git status

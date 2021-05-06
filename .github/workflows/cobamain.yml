@@ -36,4 +36,4 @@ jobs:
             port: 22
             script:
               sudo git clone https://github.com/rendybomber/lab-cicd.git
-              sudo mv /home/node01/lab-cicd/* /var/www/html/
+              sudo cp /home/node01/lab-cicd/* /var/www/html/

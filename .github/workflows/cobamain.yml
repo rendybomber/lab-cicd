@@ -37,3 +37,5 @@ jobs:
             port: 22
             script: |
               ls -l
+        run: |
+          echo Berhasil konek ke server.

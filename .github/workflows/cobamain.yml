@@ -34,7 +34,8 @@ jobs:
             username: ${{ secrets.USERNAME }}
             key: ${{ secrets.KEY }}
             port: 22
-            script: |
+      - name  : konfigure aplikasi
+        script: |
               cd /home/node01/
               sudo rm -rf lab-cicd
               sudo git clone https://github.com/rendybomber/lab-cicd.git

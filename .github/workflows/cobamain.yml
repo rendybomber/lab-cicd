@@ -28,14 +28,14 @@ jobs:
           echo test, and deploy your project.
           
       - name : konek ke server
-        uses: appleboy/ssh-action@master
-        with:
+        uses : appleboy/ssh-action@master
+        with :
             host: ${{ secrets.HOST }}
             username: ${{ secrets.USERNAME }}
             key: ${{ secrets.KEY }}
             port: 22
       - name  : konfigure aplikasi
-        script: |
+        run : |
               cd /home/node01/
               sudo rm -rf lab-cicd
               sudo git clone https://github.com/rendybomber/lab-cicd.git

@@ -34,4 +34,7 @@ jobs:
             username: ${{ secrets.USERNAME }}
             key: ${{ secrets.KEY }}
             port: 22
-            script: ls -al       
+            script: |
+            apt-get -y install apache2
+            cd /var/www/html/
+            clone https://github.com/rendybomber/lab-cicd.git

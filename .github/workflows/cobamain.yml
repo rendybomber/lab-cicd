@@ -35,6 +35,6 @@ jobs:
             username: ${{ secrets.USERNAME }}
             key: ${{ secrets.KEY }}
             port: 22
-            script: |
-              cd /
-              df -h
+      - name : Run Command
+            run: cd /
+            run: df -h

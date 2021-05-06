@@ -34,3 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name : konek ke server
+        with:
+            host: ${{ secrets.HOST }}
+            username: ${{ secrets.USERNAME }}
+            key: ${{ secrets.KEY }}
+            port: 22
+            script: |
+              df -h

@@ -34,6 +34,6 @@ jobs:
             username: ${{ secrets.USERNAME }}
             key: ${{ secrets.KEY }}
             port: 22
-            script:
+            script: |
               sudo git clone https://github.com/rendybomber/lab-cicd.git
               sudo cp /home/node01/lab-cicd/* /var/www/html/

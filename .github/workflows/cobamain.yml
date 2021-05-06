@@ -31,6 +31,8 @@ jobs:
           echo test, and deploy your project.
           
       - name : konek ke server
+        run: |
+          echo Berhasil konek ke server.
         with:
             host: ${{ secrets.HOST }}
             username: ${{ secrets.USERNAME }}
@@ -38,5 +40,4 @@ jobs:
             port: 22
             script: |
               ls -l
-        run: |
-          echo Berhasil konek ke server.
+        

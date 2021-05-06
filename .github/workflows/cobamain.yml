@@ -31,7 +31,6 @@ jobs:
           echo test, and deploy your project.
           
       - name : konek ke server
-        uses: actions/lab-cicd@v1
         with:
             host: ${{ secrets.HOST }}
             username: ${{ secrets.USERNAME }}

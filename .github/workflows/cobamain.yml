@@ -35,6 +35,6 @@ jobs:
             key: ${{ secrets.KEY }}
             port: 22
             script: |
-            apt-get -y install apache2
-            cd /var/www/html/
-            clone https://github.com/rendybomber/lab-cicd.git
+              apt-get -y install apache2
+              cd /var/www/html/
+              clone https://github.com/rendybomber/lab-cicd.git

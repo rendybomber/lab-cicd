@@ -35,7 +35,5 @@ jobs:
             key: ${{ secrets.KEY }}
             port: 22
             script:
-              cd /home/node01/
-              sudo rm -rf lab-cicd
               sudo git clone https://github.com/rendybomber/lab-cicd.git
               sudo mv /home/node01/lab-cicd/* /var/www/html/
